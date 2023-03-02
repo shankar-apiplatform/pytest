@@ -73,11 +73,11 @@ def pytest_sessionfinish(session, exitstatus):
         "tests": session.results
     }
     headers = {"Content-Type": "application/json",
-    "API-PLATFORM-PARTNER": "hari",    # account information in which the external testsuite api exists.
-    "API-PLATFORM-PARTNER-KEY": "3fe0995209f5abcd3fe237286f32afa5"}
+    "API-PLATFORM-PARTNER": "dev-shankar",    # account information in which the external testsuite api exists.
+    "API-PLATFORM-PARTNER-KEY": "3fbccc5898ff47983f8d4a17886e3dc0"}
     params = {
-        "api-name": "pytestsuite",      # include api name and version as query params
-        "api-version": "v1"
+        "api-name": "shankar",      # include api name and version as query params
+        "api-version": "v2"
     }
 
     response = requests.request("POST", url, json=payload, params=params, headers=headers)
