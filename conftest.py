@@ -77,7 +77,7 @@ def pytest_sessionfinish(session, exitstatus):
     "API-PLATFORM-PARTNER-KEY": "3fbccc5898ff47983f8d4a17886e3dc0"}
     params = {
         "api-name": "shankar",      # include api name and version as query params
-        "api-version": "v3"
+        "api-version": "v5"
     }
 
     response = requests.request("POST", url, json=payload, params=params, headers=headers)
